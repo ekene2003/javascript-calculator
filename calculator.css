@@ -1,0 +1,365 @@
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+@media screen and (max-width:768px) {
+     small{
+position: absolute;
+     color: white;
+     top: 4%;
+     left: 5%;
+}
+.calculator-body{
+     height: 90vh;
+     width: 80%;
+     border: 1px solid black;
+     margin: 5rem auto;
+     background: #000;
+     border-radius: 2rem;
+     z-index: 99;
+     position: relative;
+     border: 2px solid white;
+}
+.calculator-input{
+     background: black;
+     height: 4rem;
+     width: 90%;
+     margin:.4rem 0;
+     color: white;
+     margin: 4rem 1rem;
+     font-size: 2rem;
+     text-align: right;
+     
+}
+.calculator-btn{
+     margin-top: .7rem;
+     border-radius: 50%;
+     width: 3rem;
+     height: 3rem;
+     background: rgba(114, 113, 113, 0.2);
+     color: white;
+     font-size: 1.3rem;
+     cursor: pointer;
+
+}
+.clear{
+     display: none;
+}
+.zero{
+     width: 8rem;
+     border-radius: 1rem;
+}
+.grey{
+     background: rgb(189, 187, 187);
+     color: #000;
+}
+.yellow{
+     background: rgb(243, 153, 44);
+}
+.first-line{
+     display: flex;
+     justify-content: space-evenly;
+}
+.second-line{
+     display: flex;
+     margin-top: .4rem;
+     justify-content: space-evenly;
+}
+.third-line{
+     display: flex;
+     margin-top: .4rem;
+     justify-content: space-evenly;
+}
+.fourth-line{
+     display: flex;
+     margin-top: .4rem;
+     justify-content: space-evenly;
+}
+.last-line{
+     display: flex;
+     margin-top: .4rem;
+     justify-content: space-evenly;
+}
+
+
+@keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+@-webkit-keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+@-moz-keyframes move-background {    
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+    @-webkit-keyframes move-background {
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+.background-container{
+	position: fixed;
+	top: 0;
+	left:0;
+	bottom: 0;
+	right: 0;
+}
+
+.stars {
+ background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+ position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+  	z-index: 0;
+}
+
+.twinkling{
+	width:10000px;
+	height: 100%;
+	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    
+    -moz-animation:move-background 70s linear infinite;
+  -ms-animation:move-background 70s linear infinite;
+  -o-animation:move-background 70s linear infinite;
+  -webkit-animation:move-background 70s linear infinite;
+  animation:move-background 70s linear infinite;
+	
+}
+
+.clouds{
+	width:10000px;
+	height: 100%;
+	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+
+   -moz-animation:move-background 150s linear infinite;
+  -ms-animation:move-background 150s linear infinite;
+  -o-animation:move-background 150s linear infinite;
+  -webkit-animation:move-background 150s linear infinite;
+  animation:move-background 150s linear infinite;
+}
+img{
+  height: 70vh;
+  width:70vh;
+  position: absolute;
+  z-index: 3;
+  right: 20px;
+}
+
+}
+@media screen and (min-width:768px) {
+     small{
+position: absolute;
+     color: white;
+     top: 4%;
+     left: 5%;
+}
+.calculator-body{
+     height: 90vh;
+     width: 30%;
+     border: 1px solid black;
+     margin: 5rem auto;
+     background: #000;
+     border-radius: 2rem;
+     z-index: 99;
+     position: relative;
+     border: 2px solid white;
+}
+.calculator-input{
+     background: black;
+     height: 3rem;
+     width: 90%;
+     margin:.4rem 0;
+     color: white;
+     margin: 2.5rem 1rem;
+     font-size: 2rem;
+     text-align: right;
+     
+}
+.calculator-btn{
+     margin-top: .5rem;
+     border-radius: 50%;
+     width: 3rem;
+     height: 3rem;
+     background: rgba(114, 113, 113, 0.2);
+     color: white;
+     font-size: 1.3rem;
+     cursor: pointer;
+
+}
+.clear{
+     display: none;
+}
+.zero{
+     width: 8rem;
+     border-radius: 1rem;
+}
+.grey{
+     background: rgb(189, 187, 187);
+     color: #000;
+}
+.yellow{
+     background: rgb(243, 153, 44);
+}
+.first-line{
+     display: flex;
+     justify-content: space-evenly;
+}
+.second-line{
+     display: flex;
+     margin-top: .4rem;
+     justify-content: space-evenly;
+}
+.third-line{
+     display: flex;
+     margin-top: .4rem;
+     justify-content: space-evenly;
+}
+.fourth-line{
+     display: flex;
+     margin-top: .4rem;
+     justify-content: space-evenly;
+}
+.last-line{
+     display: flex;
+     margin-top: .4rem;
+     justify-content: space-evenly;
+}
+
+
+@keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+@-webkit-keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+@-moz-keyframes move-background {    
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+    @-webkit-keyframes move-background {
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+.background-container{
+	position: fixed;
+	top: 0;
+	left:0;
+	bottom: 0;
+	right: 0;
+}
+
+.stars {
+ background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+ position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+  	z-index: 0;
+}
+
+.twinkling{
+	width:10000px;
+	height: 100%;
+	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    
+    -moz-animation:move-background 70s linear infinite;
+  -ms-animation:move-background 70s linear infinite;
+  -o-animation:move-background 70s linear infinite;
+  -webkit-animation:move-background 70s linear infinite;
+  animation:move-background 70s linear infinite;
+	
+}
+
+.clouds{
+	width:10000px;
+	height: 100%;
+	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+
+   -moz-animation:move-background 150s linear infinite;
+  -ms-animation:move-background 150s linear infinite;
+  -o-animation:move-background 150s linear infinite;
+  -webkit-animation:move-background 150s linear infinite;
+  animation:move-background 150s linear infinite;
+}
+img{
+  height: 70vh;
+  width:70vh;
+  position: absolute;
+  z-index: 3;
+  right: 20px;
+}
+
+}
+
+

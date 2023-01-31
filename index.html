@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>calculator</title>
+          <link rel="stylesheet" href="./calculator.css">
+     </head>
+
+     <body>
+          <main class="calculator-body">
+                    <small>EKENESZN</small>
+
+               <form action="">
+                    <input  type="text" class="calculator-input">
+                    </input>
+               </form>
+               <div class="first-line">
+                    <button class="calculator-btn grey refresh">AC</button>
+                    <button class="calculator-btn grey clear">C</button>
+                    <button class="calculator-btn grey delete">Del</button>
+                    <button class="calculator-btn grey percentage"value="%">%</button>
+                    <button class="calculator-btn yellow divide" value="/">/</button>
+               </div>
+               <div class="second-line">
+                    <button class="calculator-btn" value="7">7</button>
+                    <button class="calculator-btn" value="8">8</button>
+                    <button class="calculator-btn" value="9">9</button>
+                    <button class="calculator-btn yellow multiply" value="*">x</button>
+               </div>
+               <div class="third-line">
+                    <button class="calculator-btn" value="4">4</button>
+                    <button class="calculator-btn" value="5">5</button>
+                    <button class="calculator-btn" value="6">6</button>
+                    <button class="calculator-btn yellow minus" value="-">-</button>
+               </div>
+               <div class="fourth-line">
+                    <button class="calculator-btn" value="1">1</button>
+                    <button class="calculator-btn" value="2">2</button>
+                    <button class="calculator-btn" value="3">3</button>
+                    <button class="calculator-btn yellow plus" value="+">+</button>
+               </div>
+               <div class="last-line">
+                    <button class="calculator-btn " value="0">0</button>
+                    <button class="calculator-btn" value=".">.</button>
+                    <button class="calculator-btn yellow equal zero" value="=">=</button>
+               </div>
+          </main>
+          <div class="background-container">
+               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+               <div class="stars"></div>
+               <div class="twinkling"></div>
+               <div class="clouds"></div>
+          <script>
+               let calculatorInput = document.querySelector(".calculator-input");
+               let calculatorBtn = document.querySelectorAll(".calculator-btn");
+               let refreshBtn = document.querySelector(".refresh");
+               let clearBtn = document.querySelector(".clear");
+               let deleteBtn = document.querySelector(".delete");
+               let equalBtn = document.querySelector(".equal");
+               
+               // calculatorInput.innerHTML = ' ';
+               calculatorBtn.forEach(button => {
+                    button.onclick = () => {
+                         refreshBtn.style.display = "none";
+                         clearBtn.style.display = "block";
+                         calculatorInput.value += button.value;
+                    }
+                    clearBtn.onclick = () => {
+                         refreshBtn.style.display = "block";
+                         clearBtn.style.display = "none";
+                         calculatorInput.value = " ";
+                    }
+                    deleteBtn.onclick = () => {
+                         calculatorInput.value= calculatorInput.value.slice(0,-1);
+                    }
+                    equalBtn.onclick = () => {
+                        calculatorInput.value = eval(calculatorInput.value);
+                    }
+               
+               });
+
+               
+               
+          </script> 
+     </body>
+
+</html>
