@@ -4,6 +4,12 @@
      box-sizing: border-box;
 }
 @media screen and (max-width:768px) {
+          body{
+          background-image: url("https://res.cloudinary.com/dvznglupe/image/upload/v1675264808/Akatsuki_Cloud_HD_Wallpaper_-_PixelsTalk_Net_kjovlf.jpg");
+          background-position: center ;
+          background-size: contain;
+          object-fit: contain;
+     }
      small{
 position: absolute;
      color: white;
@@ -11,7 +17,7 @@ position: absolute;
      left: 5%;
 }
 .calculator-body{
-     height: 90vh;
+     height:80ch;
      width: 80%;
      border: 1px solid black;
      margin: 5rem auto;
@@ -41,7 +47,8 @@ position: absolute;
      color: white;
      font-size: 1.3rem;
      cursor: pointer;
-
+     border: 2px solid white;
+      
 }
 .clear{
      display: none;
@@ -53,9 +60,13 @@ position: absolute;
 .grey{
      background: rgb(189, 187, 187);
      color: #000;
+     border: 2px solid white;
+
 }
 .yellow{
-     background: rgb(243, 153, 44);
+     /* background: rgb(243, 153, 44); */
+     background: rgba(204, 26, 26, 0.613);
+     border: 2px solid white;
 }
 .first-line{
      display: flex;
@@ -83,106 +94,14 @@ position: absolute;
 }
 
 
-@keyframes move-background {
-  from {
-		-webkit-transform: translate3d(0px, 0px, 0px);
-	}
-	to { 
-		-webkit-transform: translate3d(1000px, 0px, 0px);
-	}
-}
-@-webkit-keyframes move-background {
-  from {
-		-webkit-transform: translate3d(0px, 0px, 0px);
-	}
-	to { 
-		-webkit-transform: translate3d(1000px, 0px, 0px);
-	}
-}
-
-@-moz-keyframes move-background {    
-	from {
-		-webkit-transform: translate3d(0px, 0px, 0px);
-	}
-	to { 
-		-webkit-transform: translate3d(1000px, 0px, 0px);
-	}
-}
-
-    @-webkit-keyframes move-background {
-	from {
-		-webkit-transform: translate3d(0px, 0px, 0px);
-	}
-	to { 
-		-webkit-transform: translate3d(1000px, 0px, 0px);
-	}
-}
-
-.background-container{
-	position: fixed;
-	top: 0;
-	left:0;
-	bottom: 0;
-	right: 0;
-}
-
-.stars {
- background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
- position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	display: block;
-  	z-index: 0;
-}
-
-.twinkling{
-	width:10000px;
-	height: 100%;
-	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-	background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 2;
-    
-    -moz-animation:move-background 70s linear infinite;
-  -ms-animation:move-background 70s linear infinite;
-  -o-animation:move-background 70s linear infinite;
-  -webkit-animation:move-background 70s linear infinite;
-  animation:move-background 70s linear infinite;
-	
-}
-
-.clouds{
-	width:10000px;
-	height: 100%;
-	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
-	background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 3;
-
-   -moz-animation:move-background 150s linear infinite;
-  -ms-animation:move-background 150s linear infinite;
-  -o-animation:move-background 150s linear infinite;
-  -webkit-animation:move-background 150s linear infinite;
-  animation:move-background 150s linear infinite;
-}
-img{
-  height: 70vh;
-  width:70vh;
-  position: absolute;
-  z-index: 3;
-  right: 20px;
-}
-
 }
 @media screen and (min-width:768px) {
+     body{
+          background-image: url("https://res.cloudinary.com/dvznglupe/image/upload/v1675265140/Itachi_Dark_4_by_DinocoZero_on_DeviantArt_b5isqg.jpg");
+          background-position: center ;
+          background-size: cover;
+          object-fit: cover;
+     }
      small{
 position: absolute;
      color: white;
@@ -190,7 +109,7 @@ position: absolute;
      left: 5%;
 }
 .calculator-body{
-     height: 90vh;
+     height: 90vmin;
      width: 30%;
      border: 1px solid black;
      margin: 5rem auto;
@@ -262,103 +181,7 @@ position: absolute;
 }
 
 
-@keyframes move-background {
-  from {
-		-webkit-transform: translate3d(0px, 0px, 0px);
-	}
-	to { 
-		-webkit-transform: translate3d(1000px, 0px, 0px);
-	}
-}
-@-webkit-keyframes move-background {
-  from {
-		-webkit-transform: translate3d(0px, 0px, 0px);
-	}
-	to { 
-		-webkit-transform: translate3d(1000px, 0px, 0px);
-	}
-}
 
-@-moz-keyframes move-background {    
-	from {
-		-webkit-transform: translate3d(0px, 0px, 0px);
-	}
-	to { 
-		-webkit-transform: translate3d(1000px, 0px, 0px);
-	}
-}
-
-    @-webkit-keyframes move-background {
-	from {
-		-webkit-transform: translate3d(0px, 0px, 0px);
-	}
-	to { 
-		-webkit-transform: translate3d(1000px, 0px, 0px);
-	}
-}
-
-.background-container{
-	position: fixed;
-	top: 0;
-	left:0;
-	bottom: 0;
-	right: 0;
-}
-
-.stars {
- background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
- position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	display: block;
-  	z-index: 0;
-}
-
-.twinkling{
-	width:10000px;
-	height: 100%;
-	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-	background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 2;
-    
-    -moz-animation:move-background 70s linear infinite;
-  -ms-animation:move-background 70s linear infinite;
-  -o-animation:move-background 70s linear infinite;
-  -webkit-animation:move-background 70s linear infinite;
-  animation:move-background 70s linear infinite;
-	
-}
-
-.clouds{
-	width:10000px;
-	height: 100%;
-	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
-	background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 3;
-
-   -moz-animation:move-background 150s linear infinite;
-  -ms-animation:move-background 150s linear infinite;
-  -o-animation:move-background 150s linear infinite;
-  -webkit-animation:move-background 150s linear infinite;
-  animation:move-background 150s linear infinite;
-}
-img{
-  height: 70vh;
-  width:70vh;
-  position: absolute;
-  z-index: 3;
-  right: 20px;
-}
 
 }
 
