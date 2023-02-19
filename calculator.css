@@ -5,10 +5,7 @@
 }
 @media screen and (max-width:768px) {
           body{
-          background-image: url("https://res.cloudinary.com/dvznglupe/image/upload/v1675264808/Akatsuki_Cloud_HD_Wallpaper_-_PixelsTalk_Net_kjovlf.jpg");
-          background-position: center ;
-          background-size: contain;
-          object-fit: contain;
+          background: #000;
      }
      small{
 position: absolute;
@@ -97,10 +94,7 @@ position: absolute;
 }
 @media screen and (min-width:768px) {
      body{
-          background-image: url("https://res.cloudinary.com/dvznglupe/image/upload/v1675265140/Itachi_Dark_4_by_DinocoZero_on_DeviantArt_b5isqg.jpg");
-          background-position: center ;
-          background-size: cover;
-          object-fit: cover;
+          background: peru;
      }
      small{
 position: absolute;
@@ -117,7 +111,7 @@ position: absolute;
      border-radius: 2rem;
      z-index: 99;
      position: relative;
-     border: 2px solid white;
+     border: 2px solid black;
 }
 .calculator-input{
      background: black;
